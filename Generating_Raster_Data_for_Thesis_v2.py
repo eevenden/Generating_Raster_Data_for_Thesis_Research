@@ -53,8 +53,10 @@ im.save("JN_Soil_Type_Arthimetic.png")
 
 #####Part 4: Generate Quantitative Geometric Soil Type Variable
 #This is the another independent variable.
-#The file is almost the same as the original Soil Type file, but the final soil type is changed from "4" to "8".
+#The file is almost the same as the original Soil Type file, but Soil type 3 changes to '4' and Soil Type 4 is changed to "8".
 
+#Assign the old Soil Type 3 to '4'
+a[30:60,:]= 4
 #The next rows are assigned to the value "8", aka Soil 4
 a[60:100,:]= 8
 print (a)
